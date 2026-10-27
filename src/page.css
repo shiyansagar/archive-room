@@ -3,8 +3,8 @@
 :root{
   --red:#DF5061;--cream:#FFFDEE;
   --ink:#C23348;--ink-soft:#D9707E;
-  --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,"Liberation Mono",monospace;
-  --sans:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  --mono:"Google Sans Flex",system-ui,sans-serif;
+  --sans:"Google Sans Flex",system-ui,sans-serif;
   --ease:cubic-bezier(.32,.72,0,1);
 }
 .iso{
@@ -39,6 +39,7 @@ body.locked{overflow:hidden}
 .corner[data-corner="title"]{top:0;right:0;text-transform:uppercase;letter-spacing:.14em}
 .corner[data-corner="hint"]{bottom:0;left:0;text-transform:uppercase;letter-spacing:.12em;opacity:.86}
 .corner[data-corner="readout"]{bottom:0;right:0;font-variant-numeric:tabular-nums}
+@media (max-width:900px){.corner[data-corner="hint"]{bottom:20px}}
 @media (max-width:620px){
   .corner[data-corner="hint"]{bottom:20px;white-space:normal;max-width:60vw;line-height:1.5}
   .corner[data-corner="readout"]{bottom:0;left:0;right:auto}

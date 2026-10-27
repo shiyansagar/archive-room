@@ -540,4 +540,6 @@ const html = shell
   .replace("/*SCRIPT*/", () => `${kit}\nconst GEO = ${JSON.stringify(GEO)};\n${live}`.replace(/<\/(script)/gi, "<\\/$1"));
 
 writeFileSync(OUT, html);
+// The white version is the site's home page (GitHub Pages serves index.html).
+if (WHITE) writeFileSync(join(HERE, "..", "index.html"), html);
 console.log(`wrote ${OUT} · viewBox ${WIDTH}×${HEIGHT} · ${(html.length / 1024).toFixed(0)} KB · scale ${P.scale.toFixed(3)}`);
