@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Archive</title>
+<script>
+/*DATA*/
+</script>
+<style>
+/*CSS*/
+</style>
+</head>
+<body class="iso">
+<main class="stage" data-stage>
+  <div class="figure" data-figure>
+<!--SVG-->
+  </div>
+  <div class="corners" aria-hidden="true">
+    <span class="corner" data-corner="fig">Fig. 01</span>
+    <span class="corner" data-corner="title">The Archive</span>
+    <span class="corner" data-corner="hint">hover a drawer · click the computer · drag the chair</span>
+    <span class="corner" data-corner="readout" data-readout>12 drawers · rest</span>
+  </div>
+  <p class="sr-only" role="status" aria-live="polite" data-status></p>
+</main>
+
+<!-- Flying sheet: a stand-in page that curls out of the folder and fills the screen. -->
+<div class="fly" data-fly aria-hidden="true"></div>
+
+<!-- Project page -->
+<section class="project" data-project role="dialog" aria-modal="true" aria-labelledby="project-title" hidden>
+  <button class="close" type="button" data-close aria-label="Close project">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5 15 15M15 5 5 15"/></svg>
+  </button>
+  <article class="project-page" data-page></article>
+</section>
+
+<!-- ID card -->
+<section class="badge-layer" data-badge-layer role="dialog" aria-modal="true" aria-label="About this archive" hidden>
+  <div class="badge-pos" data-badge-pos>
+    <div class="badge" data-badge>
+      <div class="badge-face badge-front" data-badge-front></div>
+      <div class="badge-face badge-back" data-badge-back></div>
+    </div>
+  </div>
+  <button class="badge-flip" type="button" data-flip>flip card</button>
+</section>
+
+<script type="module">
+/*SCRIPT*/
+</script>
+</body>
+</html>

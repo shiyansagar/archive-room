@@ -1,0 +1,40 @@
+
+/* ===== Grey-white variant (built with --white): white furniture, graphite lines, black feet. ===== */
+:root{--red:#1E1E1E;--cream:#FAFAF8;--ink:#1E1E1E;--ink-soft:#6B6B6B}
+html,body{background:#ECECEA;color:#1E1E1E}
+.iso{
+  --anatomy-page:#ECECEA;--anatomy-card:#ECECEA;--anatomy-text:#1E1E1E;--anatomy-strong:#1E1E1E;--anatomy-muted:#6B6B6B;
+  --anatomy-paper:#F4F4F2;--anatomy-face:#F7F7F5;--anatomy-top:#FFFFFF;
+  --anatomy-shade-0:#D3D3D0;--anatomy-shade-1:#DCDCD9;--anatomy-shade-2:#E5E5E2;--anatomy-shade-3:#EEEEEB;
+  --anatomy-hi:#262626;--anatomy-mid:#2E2E2E;--anatomy-lo:#7A7A78;--anatomy-faint:#B9B9B6;--anatomy-lit:#111111;
+  --anatomy-halo:#8E8E89;--anatomy-halo-opacity:.38;--anatomy-dot:#262626;
+  --deep:#3A3A39;--deep-2:#4A4A48;
+}
+/* The one lit accent is graphite with white lines, like the photo's black joints. */
+.is-lit,.chair[data-lit] .cushion{
+  --anatomy-paper:#2B2B2A;--anatomy-face:#2B2B2A;--anatomy-top:#3A3A39;
+  --anatomy-shade-0:#1C1C1B;--anatomy-shade-1:#222221;--anatomy-shade-2:#282827;--anatomy-shade-3:#2F2F2E;
+  --anatomy-hi:#F5F5F3;--anatomy-mid:#F5F5F3;--anatomy-lo:#BDBDBA;--anatomy-faint:#8A8A87;--anatomy-dot:#F5F5F3;
+}
+/* Black feet. */
+.leg>.iso-fill,.leg>.iso-shade,.leg>.iso-top{fill:#232323}
+.corner{color:#1E1E1E}
+.cable-o{stroke:#2A2A2A}
+.cable-i{stroke:var(--anatomy-shade-1)}
+.card-title,.card-meta,.card-num{fill:#1E1E1E}
+.crt-glass{fill:#3A3A39}
+.crt-scan,.crt-glint{stroke:#FAFAF8}
+.crt-text,.crt-cursor{fill:#FAFAF8}
+.screen.is-lit .crt-glass{fill:#FAFAF8}
+.screen.is-lit .crt-scan,.screen.is-lit .crt-glint{stroke:#1E1E1E}
+.screen.is-lit .crt-text,.screen.is-lit .crt-cursor{fill:#1E1E1E}
+.tab.is-lit .tab-num{fill:#F5F5F3}
+.badge-layer.show{background:#1e1e1e33}
+.badge-flip{color:#1E1E1E;border-color:#1E1E1E}
+.badge-flip:hover,.badge-flip:focus-visible{background:#1E1E1E;color:#FAFAF8}
+.fly-face{border-color:#1E1E1E}
+/* Hairline strokes: every line 0.5px. */
+.room .iso-line,.room .iso-edge,.room .iso-crease,.room .iso-bevel,.room .leaf-edge{stroke-width:.5px}
+.room .iso-line[data-tone="faint"]{stroke-width:.5px}
+.cable-o{stroke-width:2px}.cable-i{stroke-width:1px}
+.lbl-card{fill:#FFFFFF}
